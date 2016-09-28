@@ -1,14 +1,17 @@
 #include <iostream>
-#include "001_two_sum.cpp"
+#include "004_Median_of_Two_Sorted_Arrays.cpp"
 #include <vector>
 
 using namespace std;
 
 int main() {
-    vector<int> nums={1,3,1,1};
+    vector<int> nums1={1,2};
+    vector<int> nums2={1,2};
 
     Solution sol;
-    bool result = sol.search(nums, 3);
-    cout << result << endl;
+    double a = sol.find_k(nums1.begin(), 2, nums2.begin(),2,2);
+    double b = sol.find_k(nums1.begin(), 2, nums2.begin(),2,3);
+    cout << a << endl;
+    cout << b << endl;
     return 0;
 }
